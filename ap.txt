@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AP INTERACTIVE</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --primary:#4e6c93;
+      --accent:#779ac9;
+      --text:#F2EAE0;
+      --card-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    html,body{
+      height:100%;
+      margin:0;
+    }
+    body {
+      background-image: url('paper.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: "Times New Roman", Times, serif;
+      color: var(--text);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:24px 12px 60px;
+    }
+    h1 {
+      color: var(--text);
+      text-align: center;
+      font-size: clamp(30px,4vw,48px);
+      border: 3px solid var(--primary);
+      background-color: var(--primary);
+      padding: 14px 18px;
+      border-radius: 18px;
+      box-shadow: 0 6px 22px rgba(78,108,147,0.25);
+      width: min(1100px,96%);
+      margin: 6px 0 18px;
+      letter-spacing: 1px;
+    }
+    .container {
+      width: min(1100px,96%);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+    details {
+      background: linear-gradient(180deg, rgba(119,154,201,0.98), rgba(119,154,201,0.92));
+      border-radius: 14px;
+      padding: 14px 18px;
+      box-shadow: var(--card-shadow);
+      transition: transform .28s ease, box-shadow .28s ease;
+      overflow: hidden;
+      border: 1px solid rgba(78,108,147,0.12);
+    }
+    details:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(78,108,147,0.18);
+    }
+    summary {
+      font-size: clamp(20px,3vw,30px);
+      font-weight:700;
+      cursor:pointer;
+      list-style:none;
+      user-select:none;
+      display:block;
+      color:var(--text);
+      padding-right:36px;
+      position:relative;
+    }
+    summary::after{
+      content:"▼";
+      position:absolute;
+      right:10px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:18px;
+      color:var(--primary);
+      transition: transform .25s ease;
+    }
+    details[open] summary::after{
+      content:"▲";
+      transform:translateY(-50%) rotate(180deg);
+    }
+    details[open] {
+      box-shadow: 0 26px 60px rgba(78,108,147,0.22);
+    }
+    .content {
+      margin-top:12px;
+      line-height:1.45;
+    }
+    dl, dt, dd, ol, ul, li {
+      color: var(--text);
+      margin:0;
+      padding:0;
+      font-size: clamp(16px,2vw,20px);
+    }
+    dt {
+      font-weight:700;
+      margin-top:12px;
+    }
+    dd {
+      margin-left:12px;
+      margin-bottom:8px;
+    }
+    ol, ul {
+      margin-left:22px;
+      margin-top:10px;
+    }
+    li {
+      margin-bottom:6px;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      display:block;
+      margin:14px auto;
+      border-radius:12px;
+      box-shadow: 0 10px 30px rgba(78,108,147,0.18);
+      transition: transform .28s ease;
+    }
+    img:hover{
+      transform: translateY(-6px) scale(1.02);
+    }
+    @media (min-width:900px){
+      .two-col {
+        display:grid;
+        grid-template-columns: 1fr 420px;
+        gap:18px;
+        align-items:start;
+      }
+      img{ margin:0; }
+    }
+    a.home {
+      font-size: 19px;
+      text-decoration:none;
+      color:var(--primary);
+      background:var(--text);
+      padding:10px 18px;
+      border-radius:12px;
+      display:inline-block;
+      margin-top:18px;
+      transition: transform .18s ease, background .18s ease, color .18s ease;
+    }
+    a.home:hover {
+      transform:translateY(-4px);
+      background:var(--primary);
+      color:var(--text);
+    }
+    details[open] {
+      box-shadow: 0 30px 70px rgba(78,108,147,0.24), 0 0 40px rgba(78,108,147,0.06) inset;
+    }
+  </style>
+</head>
+<body>
+  <h1>-----★ᯓᴀʀᴀʟɪɴɢ ᴘᴀɴʟɪᴘᴜɴᴀɴ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇᯓ★-----</h1>
+  <div class="container">
+    <details>
+      <summary>⋆˙⟡♡ ARALIN 1 - PAG-UNAWA SA KONSEPTO NG DEMAND ⋆˙⟡♡</summary>
+      <div class="content">
+        <dl>
+          <dt>MICROECONOMICS</dt>
+          <dd>- Ito'y nakatuon sa pagsusuri ng maliliit na bahagi ng ekonomiya</dd>
+          <dd>- Sinusuri nito ang kilos, gawi, at ugali ng bawat mamimili at produsyer gayundin ang galaw ng pamilihan </dd>
+          <dt>DEMAND</dt>
+          <dd>- Tumutukoy sa dami ng produkto at serbisyo na kaya at handang bilhin ng mga mamimili sa alternatibong presyo sa isang takdang panahon</dd>
+          <dd>- Maitatakda kung ang mamimili ay may kakayahan o kagustuhan na bilhin ang isang produkto at serbisyo </dd>
+          <dd>- Kagustuhan + Kakayahan = Demand</dd>
+          <dt>PRESYO</dt>
+          <dd>- Pangunahing salik na nakapagpapabago ng demand ng mga mamimili</dd>
+          <dd>- May malaking impluensya sa pagtatakda ng demand ng mga mamimili </dd>
+          <dt>DEMAND FUNCTION</dt>
+          <dd>- Sa pamamagitan ng mathematical equation ay maipapahayag ang ugnayan ng presyo at demand.</dd>
+          <dd>- Nagpapakita ito ng ugnayan ng dalawang variables</dd>
+          <dd>- Qd (Quantity Demanded - Dependent varisble)</dd>
+          <dd>- P (Presyo - Independent variable)</dd>
+          <img src="formuladf.jpg" alt="FORMULA">
+          <dt>DEMAND SCHEDULE</dt>
+          <dd>-Isang talahanayan na nagpapakita ng demand ng mamimili sa bawat lebel ng presyo </dd>
+          <img src="scheduleds.jpg" alt="SCHEDULE">
+          <dt> DEMAND CURVE </dt>
+          <dd>- Grapikong paglalarawan ng di-tuwirang relasyon ng presyo at dami ng demand </dd>
+          <img src="curvedc.jpg" alt="GRAPH">
+          <dt> MARKET DEMAND </dt>
+          <dd> - Kapag ang indibidwal na demand ng mga mamimili ay pinagsama-sama </dd>
+          <dt> BATAS NG DEMAND </dt>
+          <dd>- Habang ang presyo ng produkto/serbisyo ay tumataas, kumokonti ang bibilhing produkto ng maimimili.</dd>
+          <dd>- Ngunit kapag ang presyo ay bumababa, dumarami ang produktong bibilhin ng maimili habang ang ibang salik ay hindi nagbabago</dd>
+          <dd>- Presyo lamang ang nakaaapekto sa demand</dd>
+          <dt> CETERIS PARIBUS </dt>
+          <dd>- Ito ay nangangahulugang "All other things being equal" o "lahat ng iba pang mga bagay ay pantay"</dd>
+          <dd>- Isang hinuha na ang lahat ng iba pang mga salik o variable ay pinanatiling pare-pareho o hindi nagbabago habang sinusuri ang isang partikular na ugnayan sa ekonomiya, tulad ng relasyon ng presyo at demand</dd>
+        </dl>
+        <ol> MGA SALIK NA NAGAAPEKTO SA DEMAND
+          <li> Panlasa/Kagustuhan </li>
+          <li> Kita </li>
+          <li> Populasyon </li>
+          <li> Presyo ng Magkaugnay na produkto </li>
+          <li> Okasyon </li>
+          <li> Ekspektasyon </li>
+        </ol>
+      </div>
+    </details>
+    <details>
+      <summary>⋆˙⟡♡ ARALIN 2 - PAG-UNAWA SA KONSEPTO NG SUPPLY ⋆˙⟡♡</summary>
+      <div class="content two-col">
+        <div>
+          <dl>
+            <dt>SUPPLY</dt>
+            <dd>- Tumutukoy sa dami ng produkto at serbisyo na gustong ibenta ng mga produsyer sa isang takdang presyo at partikular na panahon</dd>
+            <dd>- Pinakamahalagang nagtatakda (determinant) sa dami ng supply presyo </dd>
+            <dd>- Pagnanais + Kakayahan = Supply</dd>
+            <dt>BATAW NG SUPPLY</dt>
+            <dd>- Kapag tumataas ang presyo, tataas ang dami ng gusto at kayang ibenta, at kapag bumaba ang presyo, bababa naman ang dami ng gusto at kayang ibenta</dd>
+            <dt>SUPPLY FUNCTION</dt>
+            <dd>- Isang mathematical equation na nagpapakita sa relasyon na dami</dd>
+            <dd>- Qs (Quantity Supplied - Dependent varisble)</dd>
+            <dd>- P (Presyo - Independent variable)</dd>
+            <img src="sf.jpg" alt="FORMULA">
+            <dt>SUPPLY SCHEDULE</dt>
+            <dd>- Talahanayang nagpapakita kung gaano karaming produkto o serbisyo ang nais gawin ng mga produsyer </dd>
+            <img src="ss.jpg" alt="SCHEDULE">
+            <dt> SUPPLY CURVE </dt>
+            <dd>- Grapikong representasyon kung gaano karaming produkto o serbisyo ang nais gawin ng mga produsyer </dd>
+            <img src="sc.jpg" alt="GRAPH">
+          </dl>
+          <ol> MGA SALIK NA NAGAAPEKTO SA SUPPLY
+            <li> Pagbabago sa teknolohiya </li>
+            <li> Pagbabago sa halaga ng mga salik ng produksyon </li>
+            <li> Pagbabago sa bilang ng mga nagtitinda </li>
+            <li> Pagbabago sa presyo ng kaugnay na produkto </li>
+            <li> Ekspektasyon ng presyo </li>
+            <li> Okasyon/Tradisyon </li>
+            <li> Panahon/Klima </li>
+            <li> Dali ng pagkasira/pagkabulok ng isang produkto </li>
+            <li> Kalamidad </li>
+            <li> Subsidiya/Tulong mula sa pamahalaan </li>
+          </ol>
+        </div>
+        <div style="display:flex;align-items:flex-start;justify-content:center;"></div>
+      </div>
+    </details>
+    <details>
+      <summary>⋆˙⟡♡ ARALIN 3 - ELASTICIDAD ⋆˙⟡♡</summary>
+      <div class="content">
+        <dl>
+          <dt>ANO ANG ELASTISIDAD?</dt>
+          <dd>- Paraan upang masukat ang pagtugon ng isang indibidwal sa pagbabago ng presyo</dd>
+          <dd>- Bahagdan ng pagbabago sa dami ng demand ayon sa bahagdan ng pagbabago ng presyo </dd>
+          <dd>- May limang uri ng elasticidad: elastik, di-elastic, unitary, ganap na elastik, ganap na di-elastik </dd>
+          <img src="band.jpg" alt="Elasticidad">
+          <dt>ELASTIK</dt>
+          <dd>- Coefficient: /E/>1</dd>
+          <dd>- Pagtugon ng Quantity Demanded/Quantity Supplied kaysa sa bahagdan ng pagbabago ng presyo</dd>
+          <dd>- Halimbawa: Mga produktong maraming kapalit o kahalili: Softdrinks</dd>
+          <dt>DI-ELASTIK</dt>
+          <dd>- Coefficient: /E/&lt;1</dd>
+          <dd>- Maliit ang maging bahagdan ng pagtugon ng Qd/Qs kaysa sa bahagdan ng pagbabago ng presyo</dd>
+          <dd>- Halimbawa: Mga pangunahing produktong walang kapalit: Gamot</dd>
+          <dt>UNITARY</dt>
+          <dd>- Coefficient:/E/=1</dd>
+          <dd>- Pareho ang bahagdan ng pagbabago ng presyo ng presyo sa bahagdan ng presyo</dd>
+          <dt>GANAP NA ELASTIK</dt>
+          <dd>- Coefficient:/E/∞</dd>
+          <dd>- Pagbabago sa presyo ay magdudulot ng (Infinite) na pagbabago sa Qd/Qs (Horizontal)</dd>
+          <dd>- Halimbawa: Produktong handang bilhin/ibenta ng marami sa isang takdang presyo: Chocolate</dd>
+          <dt>GANAP NA DI-ELASTIK</dt>
+          <dd>- Coefficient: /E/0</dd>
+          <dd>- Di magbabago ang quantity, pagbabago ng presyo (Vertical)</dd>
+          <img src="peos.png" alt="Price elasticity of supply">
+        </dl>
+      </div>
+    </details>
+    <details>
+      <summary>⋆˙⟡♡ ARALIN 4 - MARKET EQUILIBRIUM ⋆˙⟡♡</summary>
+      <div class="content">
+        <dl>
+          <dt>EQUILIBRIUM</dt>
+          <dd>- Walang sinuman sa mamimili at nagbibili ang gusting baguhin ang kasalukuyang sitwasyon sa pamilihan.</dd>
+          <dd>- Pagkakasundo g bumibili at nagbibili sa isang takdang presyo at dami ng produkto</dd>
+          <dd>- Qs=Qd</dd>
+          <img src="eq.jpeg" alt="Equilibrium">
+          <dt>DI-EQUILIBRIUM</dt>
+          <dd>- P ay tumaas - S ay tumaas = D ay bababa (Surplus)</dd>
+          <dd>- P ay bababa - S ay bababa = D ay tumaas (Shortage)</dd>
+          <img src="deq.png" alt="Di equilibrium">
+        </dl>
+      </div>
+    </details>
+    <details>
+      <summary>⋆˙⟡♡ ARALIN 5 - IBA'T IBANG ESTRUKTURA NG PAMILIHAN ⋆˙⟡♡</summary>
+      <div class="content">
+        <dl>
+          <dt>PAMILIHAN</dt>
+          <dd>- Mamimili + Produkto + Prodyuser</dd>
+          <dd>- Nakakamit ng konsyumer ang pangangailangan at kagustuhan dito</dd>
+          <img src="pami.png" alt="PAMILIHAN">
+          <dt>PAGKAKAIBA NG MGA ANYO/URI SA PAMILIHAN</dt>
+          <dd>- Bilang at laki ng produsyer o konsyumer</dd>
+          <dd>- Uri ng produkto o serbisyo</dd>
+          <dd>- Kontrol sa pagpasok sa pamilihan</dd>
+          <dd>- Kontrol sa presyo</dd>
+          <dd>- Paggamit sa di-presyong kompetisyon</dd>
+          <dt>APAT NA URI NG PAMILIHAN</dt>
+          <dd>- Lokal</dd>
+          <dd>- Panrelihiyon</dd>
+          <dd>- Pambansa</dd>
+          <dd>- Pandaigdigan</dd>
+          <dt>ESTRUKTURA NG PAMILIHAN</dt>
+          <dd>- Ganap na kompetisyon</dd>
+          <dd>- Di-ganap na kompetisyon</dd>
+          <dt>GANAP NA KOMPETISYON</dt>
+          <dd>- Maraming konsyumer at produsyer</dd>
+          <dd>- Magkakatulad na produkto</dd>
+          <dd>- Industriya ay price takers</dd>
+          <dd>- Malayang nakapapasok at nakalalabas ang mga kalakalan sa produksyon</dd>
+          <img src="gnk.png" alt="Ganap na kompetisyon"><br>
+          <dt>DI-GANAP NA KOMPETISYON</dt>
+          <dd>- Estrukturang pampamilihan na kung saan ang mamimili ay ang nagdedesisyon sa presyo</dd>
+          <img src="dgnk.jpg" alt="Di-ganap na kompetisyon"><br>
+          <dt>MONOPOLYO</dt>
+          <dd>- Walang kakompetensiya</dd>
+          <dd>- Iisa ang produkto</dd>
+          <dd>- Produkto ay walang malapit na kapalit</dd>
+          <dd>- Price maker</dd>
+          <dd>- Napakahirap ang pagpasok ng mga bagong prodyuser sa ganitong pamilihan </dd>
+          <dd>- Ang pag-anunsyo sa produkto ay maaaring gamitin o hindi</dd><br>
+          <dt>OLIGOPOLYO</dt>
+          <dd>- Unti lang ang mga produsyer</dd>
+          <dd>- Produkto ay maaaring magkakatulad o magkakaiba</dd>
+          <dd>- Malaki ang control pagdating sa presyo</dd>
+          <dd>- Mahirapang pagpasok</dd><br>
+          <dt>MONOPOLISTIC COMPETITION</dt>
+          <dd>- Same nature store</dd>
+          <dd>- May katamtamang dami</dd>
+          <dd>- Agresibong kompetensiya</dd>
+          <dd>- Malawakang pag-aanunsiyo</dd>
+          <dd>- Kaunting kontrol sa presyo</dd>
+          <dd>- Madaling pumasok</dd><br>
+          <dt>MONOPSONY</dt>
+          <dd>- Opposite ng monopoly</dd>
+          <dd>- Maraming nagtitinda, isa lang ang bumibili</dd>
+          <dd>- Konsyumer na maimpluwensiyahan ang presyo sa pamilihan</dd>
+        </dl>
+      </div>
+    </details>
+<details>
+      <summary>⋆˙⟡♡ ARALIN 6 - ANG PAGKONTROL NG PRESYO SA PAMILIHAN ⋆˙⟡♡</summary>
+      <div class="content">
+        <dl>
+          <dt>PRICE CONTROL</dt>
+          <dd>- Ang pagtatadhana ng pamahalaan ng pinakamababa at pinakamataas na presyong maaating itakda sa mga produkto at serbisyo.</dd>
+
+          <dt>R.A 7581 (PRICE CONTROL ACT)</dt>
+          <dd>- Isang batas na nagbibigay ng proteksyon sa mga konsyumer sa pamamagitan ng pagpapatatag ng mga presyo ng mga pangunahing pangangailangan.</dd>
+
+          <dt>PRICE CEILING</dt>
+          <dd>- Ang <strong>PINAKAMATAAS</strong> na presyong itinakda ng pamahalaan upang ipagbili ang mga produkto.</dd>
+          <dd>- Ito ay isinasagawa ng pamahalaan upang tulungan at bigyang proteksyon ang mga mamimili laban sa mga abusado at mapagsamantalang negosyante.</dd>
+          <dd>- Itinatakda ito na mas mababa sa equilibrium price na umiiral sa pamilihan.</dd>
+  <img src="PC.png" alt="Price ceiling">
+
+          <dt>PRICE SUPPORT</dt>
+          <dd>- Ito naman ay isinasagawa para sa mga produsyer upang sila ay makabawas ng gastusin sa produksyon at makamit ang kita.</dd>
+
+          <dt>FLOOR PRICE</dt>
+          <dd>- Ang <strong>PINAKAMABABANG</strong> presyong itinakda ng pamahalaan upang ipagbili ang mga produkto.</dd>
+          <dd>- Itinakda ito na mas mataas sa equilibrium price na umiiral sa pamilihan.</dd>
+  <img src="FP.png" alt="Floor price">
+
+        </dl>
+      </div>
+    </details>
+
+  </div>
+  <a class="home" href="chae.html">← Back to homepage</a>
+</body>
+</html>

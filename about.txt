@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ABOUT ME!!</title>
+  <style>
+    :root {
+      --primary: #4e6c93;
+      --text: #F2EAE0;
+    }
+
+    body {
+      background-image: url('paper.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family:Times New Roman;
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+    }
+
+    h1 {
+      color: var(--text);
+      text-align: center;
+      font-size: 40px;
+      border: 3px solid var(--primary);
+      background-color: var(--primary);
+      padding: 8px 20px;
+      margin: 30px auto;
+      width: fit-content;
+      border-radius: 10px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin: 50px auto;
+      width: 90%;
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .info-box {
+      background-color: var(--primary);
+      border: 1px solid var(--text);
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 600px;
+    }
+
+    img {
+      width: 320px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 { font-size: 28px; margin-top: 0; }
+    p, ul { font-size: 20px; }
+
+    video {
+      display: block;
+      margin: 50px auto;
+      width: 700px;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    a.home {
+      font-size: 19px;
+      text-decoration: none;
+      color: var(--primary);
+      background: var(--text);
+      padding: 10px 18px;
+      border-radius: 12px;
+      display: inline-block;
+      margin: 30px auto;
+      transition: transform .18s ease, background .18s ease, color .18s ease;
+    }
+
+    a.home:hover {
+      transform: scale(1.08);
+      background: var(--primary);
+      color: var(--text);
+    }
+
+    .double-pic {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>-----★ᯓᴍᴀɪɴ ᴘᴀɢᴇ ᴄᴏɴᴛᴇɴᴛᯓ★-----</h1>
+
+  <div class="section">
+    <img src="me.jpeg" alt="It's Chaello!">
+    <div class="info-box">
+      <h2>CHAELLO/CHAE</h2>
+      <p>She/her</p>
+      <ul>
+        <li>My name is Mikeischa Chaello M. Abellon, but you can call me Chaello or Chae!</li>
+        <li>I am 14 years old and my birthday is on September 20, 2011</li>
+        <li>My favorite colors: Blue, Pink, and Red</li>
+        <li>My favortire things: Popmart, books, phone, pillows and sanrio merch</li>
+        <li>My favorite food: Buldak, ramen, tocino, seafood and pizza</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="beneg.jpeg" alt="My benevogang!">
+    <div class="info-box">
+      <h2>BENEVOGANG</h2>
+      <p>My first ever friendgroup here in LPSCI!</p>
+      <ul>
+        <li>Origin: We all became friends and created the friend group back when we were in Grade 7-Benevolence</li>
+        <li>Members: Sefie Labador, Nicole Manguerra, Tamara Barlis, Sofia Dionglay, Leira Pangilinan, and Sophie Reyes!</li>
+        <li>Benevogang was always there for me when I was upset, mad or bored. They make me happy all the time. There are times we have silly fights and banters but we all really love each other. No other friendgroup would replace them!!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="fn8.jpeg" alt="My fantastic 8!">
+    <div class="info-box">
+      <h2>FANTASTIC 8</h2>
+      <p>My current friendgroup in Grade 9!</p>
+      <ul>
+        <li>Origin: It all started when it was almost my birthday, I invited some people to go ice skating, and they had kept a secret from me by suprising me on my birthday. They had a gc called "Chae borthday" and they added me when it was my bday and we turned it into a friendgroup called Fantastic 8!</li>
+        <li>Members: Andjhay Camonayan, Uniquo De Asis, Mayumi Vergara, Tamara Barlis, Nicole Manguerra, Sophie Reyes, and Sefie Labador!</li>
+        <li>Fantastic 8 was always so active and humorous, my grade 9 would be a bit boring if Fantastic 8 was never created. I cherish a lot of memories alredy even though we just made it weeks ago. I am excited to make more memories with them!!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="double-pic">
+      <img src="fam.jpeg" alt="Family">
+      <img src="nnmm.jpeg" alt="Another photo">
+    </div>
+    <div class="info-box">
+      <h2>FAMILY!</h2>
+      <p>My favorite people!</p>
+      <ul>
+        <li>My family consists of: My mom, dad, grandma, ninong, kuya, and ate</li>
+        <li>We all live together (except my ate) and my ninong and grandma has a house just infront of ours.</li>
+        <li>I really love them, without them, I wouldn't be here since they gave me their full support when I first entered LPSci.</li>
+        <li>I have a lot of special memories in my life like my 7th birthday and our trip to Korea! Memories don't have to be expensive, my family memories are filled with laughter, bantering, and love.</li>
+      </ul>
+    </div>
+  </div>
+
+  <video controls>
+    <source src="o.mp4" type="video/mp4">
+  </video>
+
+  <div style="text-align:center;">
+    <a href="chae.html" class="home">← Back to homepage</a>
+  </div>
+</body>
+</html>
