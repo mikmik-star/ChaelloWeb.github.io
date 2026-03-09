@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Welcome to Chae's Webpage</title>
+  <meta charset="UTF-8">
+  <title>Grade 9 Diaries</title>
   <style>
-    a {
-      display: inline-block;
-      transition: transform 0.3s ease;
-    }
+   body {
+  margin: 0;
+  padding: 0;
+  background: url("rainbow.JPG") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
-    a:hover {
-      transform: translateY(-8px) scale(1.05);
-    }
+.box {
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  padding: 30px; /* increased padding */
+  margin: 20px;  /* slightly larger margin */
+  font-size: 2em; /* bigger text */
+  width: 500px;   /* wider box */
+}
+
+.big {
+  width: 600px;   /* even wider for the big box */
+  padding: 50px;  /* more padding */
+  font-size: 2.5em; /* larger text */
+  background-color:#C3FF0B;
+}
+
+.red {
+  background-color:#CB4344;
+}
+
+.blue {
+  background-color:#0FDBFE;
+}
+
+.orange {
+  background-color:#FEA10F;
+}
+
+.purple {
+  background-color:#BC5FF6;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.clickable:hover {
+  transform: scale(1.1);
+}
+
+.small {
+  font-size: 1.8em; /* bigger than before */
+  width: 400px;     /* wider than before */
+}
   </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-image: url('woahh.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; color: #58708f; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+<body>
+  <div class="box big">ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴀᴅᴇ 9 ᴅɪᴀʀɪᴇꜱ!</div>
 
-  <div style="text-align: center; padding: 40px; background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
-    <h1 style="font-size: 2.5em; margin-bottom: 30px; color: #779ac9;">⋆ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄʜᴀᴇ'ꜱ ᴡᴇʙᴘᴀɢᴇ!⋆</h1>
-    
-    <ul style="list-style: none; padding: 0;">
-      <li style="margin: 15px 0;">
-        <a href="about.html" style="text-decoration: none; font-size: 1.2em; color: #779ac9; padding:5px 10px; border: 2px solid #0288d1; border-radius: 8px;">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍᴇ!</a>
-      </li>
-      <li style="margin: 15px 0;">
-        <a href="tle.html" style="text-decoration: none; font-size: 1.2em; color: #779ac9; padding: 5px 10px; border: 2px solid #0288d1; border-radius: 8px;">ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴛʜᴇ ᴛʟᴇ/ɪᴄᴛ ᴄᴏɴᴛᴇɴᴛꜱ!</a>
-      </li>
-      <li style="margin: 15px 0;">
-        <a href="ap.html" style="text-decoration: none; font-size: 1.2em; color: #779ac9; padding: 5px 10px; border: 2px solid #0288d1; border-radius: 8px;">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴀᴄᴄᴇꜱꜱ ᴛʜᴇ ᴀᴘ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɴᴏᴛᴇꜱ!</a>
- </li>
-      <li style="margin: 15px 0;">
-        <a href="creds.html" style="text-decoration: none; font-size: 1.2em; color: #779ac9; padding: 5px 10px; border: 2px solid #0288d1; border-radius: 8px;">ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴛʜᴇ ᴄʀᴇᴅɪᴛꜱ!</a>
-
-      </li>
-    </ul>
-  </div>
-
+  <a href="https://mikmik-star.github.io/ChaelloWeb.github.io/chae.html" target="_blank" class="box blue clickable">1ꜱᴛ Qᴜᴀʀᴛᴇʀ ᴀɴᴅ 2ɴᴅ Qᴜᴀʀᴛᴇʀ</a>
+  <a href="3rdqtr.html" target="_blank" class="box red clickable">3ʀᴅ Qᴜᴀʀᴛᴇʀ</a>
+  <a href="4qtr.html" target="_blank" class="box orange clickable">4ᴛʜ Qᴜᴀʀᴛᴇʀ</a>
+  <a href="credits.html" target="_blank" class="box purple clickable small">ᴄʀᴇᴅɪᴛꜱ</a>
 </body>
 </html>
